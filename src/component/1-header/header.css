@@ -1,0 +1,192 @@
+/*
+table of contents
+=====================
+1-header desine 
+
+2-button & icon && meduol
+
+
+
+3- media quiry
+
+
+*/
+/*
+=========================
+header 
+++++++++++++++++++++++++++
+*/
+header ul.flex{
+ gap: 16px;
+ 
+}
+
+header.flex nav{
+    background-color: var(--bg-header);
+    padding: .7rem 1.6rem;
+    border-radius :40px;;
+    margin-top: 1rem;
+    box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.775);
+}
+.light header.flex nav{
+    box-shadow:  1px 1px 20px rgba(0, 0, 0, 0.292);
+}
+
+
+header ul li a {
+    color: var(--title);
+    opacity: .9;
+    font-size: .88rem;
+    font-weight: 500;
+}
+header ul li a:hover{
+    color: var(--blue);
+    opacity: 1;
+    font-size: .9rem;
+    transition: .2s;
+    font-weight: 500;
+}
+header button{
+    font-size: 1.2rem;
+}
+header.flex{
+    justify-content: space-between;
+    padding: 1rem 2.4rem ;
+}
+header button.menue{
+    display: none;
+}
+
+/*icon style*/
+
+.icon-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: var(--title);
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: var(--secondary);
+    padding: 10px;
+    opacity: 1;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    box-shadow: 0 0 10px var(--primary);
+    transition: .2s;
+}
+.icon-menu:hover{
+    box-shadow:0 0 10px var(--title);
+    font-size: 1.7rem;
+    color: var(--title);
+
+}
+
+.icon-moon-o , .icon-sun{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 25px;
+    color: var(--title);
+    width: 25px;
+    font-size: 1.5rem;
+    background-color: var(--secondary);
+    padding: 10px;
+    opacity: 1;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--primary);
+    transition: .2s;
+}
+.icon-moon-o:hover{
+    box-shadow:0 0 10px var(--title);
+    font-size: 1.7rem;
+    color: var(--title);
+}
+
+.icon-close{
+    font-size: 1.5rem;
+    color: var(--subtitle);
+    transition: .3s;
+}
+.icon-close:hover{
+    font-size: 1.7rem;
+    color: crimson;
+    animation: rotate 1s 1 ;
+}
+@keyframes rotate{
+    0%{transform: rotate(0deg);
+    }
+    100%{transform: rotate(180deg);
+    }
+}
+
+/*pup up modle*/
+
+header .fixed {
+    position: fixed;
+    z-index: 10px;
+    inset:0;
+    background-color: rgba(40, 40, 48, 0.91);
+   backdrop-filter: blur(4px);
+}
+
+
+
+header .fixed ul.model{
+    scale: 1;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary);
+    animation: move .7s 1;
+}
+@keyframes move{
+    0%{
+        scale: 0;
+    }
+    60%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1;
+    }
+}
+ header .fixed ul.model li {
+    border-bottom: var(--border) 1px solid;
+    padding-bottom: .7rem;
+    padding-top: 0.5rem;
+ }
+ header .fixed ul.model li:last-child{
+    border-bottom: none;
+ }
+ header .fixed ul.model li a{
+    font-size: 1rem;
+ }
+ header .fixed ul.model li:first-child{
+    text-align: right;
+    border:none;
+    padding-bottom: 0;
+    padding-top: 0.2rem;
+ }
+
+/*
+=========================
+header 
+++++++++++++++++++++++++++
+*/
+
+@media (max-width:700px){
+header.flex nav{
+    display: none;
+}
+header button.menue{
+    display: block;
+}
+}

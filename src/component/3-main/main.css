@@ -1,0 +1,177 @@
+
+
+
+
+
+
+
+
+
+main.flex{
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+
+
+/*
+====================
+left-section
+====================
+*/
+main section.left-section{
+    display: flex;
+    flex-direction: column;
+}
+main section.left-section button{
+     background-color: rgba(36, 37, 46, 1);
+     width: 11rem;
+     padding: .75rem 0;
+     text-align: center; 
+     font-size: 1rem;
+    text-transform: capitalize;
+    opacity: .5;
+    transition: .3s;
+    border-radius: 5px;
+    margin: 5px 0;
+    }
+    main section.left-section button:hover{
+        opacity: 1;
+    }
+    main section.left-section button.active{
+        opacity: 1;
+        border:2px solid var(--blue);
+        font-weight: bold;
+        padding: .8rem 0;
+        letter-spacing: .6px;
+    }
+.light main section.left-section button.active{
+    opacity: 1;
+    border:2px solid var(--title);
+    font-weight: bold;
+    padding: .8rem 0;
+    letter-spacing: .6px;
+}
+
+
+
+/*
+====================
+right-section
+====================
+*/
+main section.right-section{
+    flex-grow:1 ;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+main section.right-section article.card{
+    padding: 5px;
+    width: 270px;
+}
+.card .box{
+    padding: 1rem .4rem;
+    background-image: linear-gradient( 360deg,rgba(0, 0, 0, 0.812),rgba(255, 255, 255, 0));
+}
+.card .box .title{
+    color: var(--title);
+
+}
+.card .box .sub-title{
+    color: var(--subtitle);
+    font-size: .8rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+}
+.card .box .icons{
+    justify-content: space-between;
+}
+.card .icon-github,.icons .icon-link{
+font-size: 1.2rem;
+color: var(--subtitle);
+}
+.card .icon-github:hover,.icons .icon-link:hover{
+    cursor: pointer;
+font-size: 1.25rem;
+    color: var(--title);
+}
+.card div#BOX{
+    border: 1px solid rgba(68, 85, 102, 0.39);
+    transition: .3s;  
+    width: 271px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.card img{
+    border-radius: 5px;
+    width: 269px;
+}
+
+.card div#BOX:hover{
+    border: 1px solid var(--blue);
+    scale: 1.01;
+    cursor: pointer;
+    rotate: 1deg;
+}
+#linko{
+    color: var(--blue);
+    font-size: 1rem;
+    gap: 4px;
+}
+
+
+.light main section.right-section article.card{
+                    border: none;
+                border-radius: 10px;
+}
+.light main section.right-section article.card:hover{
+                            border: none;
+                        }
+
+
+
+
+/*
+===============
+media
+==============
+*/
+@media (max-width: 600px) {
+    main.flex{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+    main section.left-section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main section.left-section button{
+        background-color: rgba(36, 37, 46, 1);
+        width: 7rem;
+        padding: .5rem 0;
+        text-align: center; 
+
+        font-size: .8rem;
+       text-transform: capitalize;
+       opacity: .5;
+       transition: .3s;
+       border-radius: 5px;
+       margin: 5px 5px;
+       }
+       main section.right-section{
+        flex-grow: 1;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: stretch;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+}

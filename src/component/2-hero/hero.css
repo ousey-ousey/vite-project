@@ -1,0 +1,82 @@
+
+
+/*
+=========================
+hero left-section
+++++++++++++++++++++++++++
+*/
+
+div.hero{
+    margin-top: 30px;
+}
+.hero .left-section{
+    flex-grow: 1;
+}
+.hero .left-section .avatar{
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid rgb(68, 56, 42);
+    margin-right: 1rem;
+}
+.hero .left-section .verified{
+    color: var(--blue);
+    font-size: 1.5rem;
+    margin-left: 7rem;
+    margin-bottom:2rem;
+    margin-top: -1.5rem;
+}
+.hero .left-section .parant-yousef{
+    align-items: start;
+    min-height: 150px;
+    flex-direction: column;}
+    .hero .left-section h1 {
+        color: var(--title);
+        line-height: 2rem;
+        font-size: 2.85rem;
+        margin: 24px 0;
+    }
+
+    .hero .left-section p.subtitle {
+        color: var(--subtitle);
+        font-size: .9rem;
+        line-height: 1.65rem;
+        margin-bottom: 32px;
+    }
+    /*
+====================
+    icons
+====================
+    */
+    .hero .left-section .icons{
+        gap: 1.7rem;
+    }
+    .hero .left-section .icons .icon{
+        font-size: 2.2rem;
+        margin: 10px;
+        margin-left: 20px;
+        color: var(--subtitle);
+        width: 20px;
+        height: 20px;
+    }
+    .hero .left-section .icons .icon:hover{
+        color: var(--title);
+    }
+/*
+=========================
+right-section animation 
+++
+=========================
+*/
+
+.animation{
+    width: 100%;
+width:200rem;
+}
+/*================
+media
+==================*/
+@media screen and (max-width: 768px) {
+    .animation{
+  display: none;
+    }
+}
