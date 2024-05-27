@@ -1,6 +1,5 @@
 import "./hero.css";
 import { motion } from "framer-motion";
-
 import devanimation from "../../animation/dev.json";
 import Lottie from "lottie-react";
 export default function Hero() {
@@ -45,10 +44,16 @@ export default function Hero() {
           </p>
         </div>
         <div className="icons flex">
-          <div className="icon icon-github">
-            <a href="google.com"></a>
-          </div>
-          <div className="icon icon-linkedin-square"></div>
+          <a
+            target="_blank"
+            className="icon icon-github"
+            href="https://github.com/ousey-ousey"
+          ></a>
+          <a
+            className="icon icon-linkedin-square"
+            target="_blank"
+            href="https://www.linkedin.com/in/yousef-alnoumany/"
+          ></a>
         </div>
       </div>
       <div className="right-section animation ">
