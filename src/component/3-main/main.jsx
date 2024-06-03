@@ -66,11 +66,11 @@ export default function Main() {
         </button>
         <button
           onClick={() => {
-            handleClick("tailwind");
+            handleClick("Firebase");
           }}
-          className={active === "tailwind" ? "active" : null}
+          className={active === "Firebase" ? "active" : null}
         >
-          tailwind
+          Firebase
         </button>
       </section>
       <section id="maincont" className="flex right-section">
@@ -100,6 +100,11 @@ export default function Main() {
                 <div className="box" style={{ width: 270 }}>
                   <h2>{item.title}</h2>
                   <p className="sub-title">{item.P}</p>
+                  {item.link && (
+                    <a id="demobtn" href={item.link} target="_blank">
+                      Demo
+                    </a>
+                  )}
                   <div className="flex icons">
                     <div style={{ gap: "11px" }} className="flex">
                       <span className="icon-link"></span>

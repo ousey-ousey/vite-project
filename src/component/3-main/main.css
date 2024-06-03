@@ -129,8 +129,19 @@ font-size: 1.25rem;
 .light main section.right-section article.card:hover{
                             border: none;
                         }
+ #demobtn{
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 100px;
+ }
+#demobtn:hover{
+    box-shadow: inset ;   
+    box-shadow: 0px -1px 20px 7px #7e1b1bcc, 0px 0px 20px 6px #4731e0a3;
 
-
+}
 
 
 /*
