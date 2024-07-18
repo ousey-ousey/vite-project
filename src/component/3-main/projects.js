@@ -29,7 +29,7 @@ const myprojects = [
     id: 4,
     title: "store & cart & page (node js and express)",
     category: "React",
-    imgpath: "/store",
+    imgpath: "/store.jpg",
     P: "this is a desine for complete functioning store",
     git: "https://github.com/ousey-ousey",
   },
