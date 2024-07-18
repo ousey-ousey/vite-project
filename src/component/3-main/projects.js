@@ -9,16 +9,32 @@ const myprojects = [
   },
   {
     id: 2,
-    title: " To do&Firebase& database",
+    title: " social media web",
     category: ["React", "Firebase"],
     link: "https://react-firebase-pro-2-hmzc7uxvb-yousefs-projects-0a4c00cd.vercel.app/",
+    imgpath: "/social.jpg",
+    P: "social media website sitimulator easy to use ,dark mode,functioning and simple ",
+    git: "https://github.com/ousey-ousey",
+  },
+  {
+    id: 3,
+    title: " To do&Firebase& database",
+    category: ["React"],
+    link: "https://second-one-three.vercel.app/",
     imgpath: "/black.jpg",
     P: "this is   REACT Firebase databaseusing sign up and in data send and vertification of email, the hard wep everyone have an email and have his to do lists that is saved in database remove and add tasks check it now",
     git: "https://github.com/ousey-ousey",
   },
-
   {
-    id: 3,
+    id: 4,
+    title: "store & cart & page (node js and express)",
+    category: "React",
+    imgpath: "/store",
+    P: "this is a desine for complete functioning store",
+    git: "https://github.com/ousey-ousey",
+  },
+  {
+    id: 5,
     title: "bar of navigations",
     category: "JS",
     imgpath: "/bar-succes.jpg",
@@ -26,7 +42,7 @@ const myprojects = [
     git: "https://github.com/ousey-ousey",
   },
   {
-    id: 4,
+    id: 6,
     title: "FRQs",
     category: "JS",
     imgpath: "/FQRs.jpg",
@@ -34,7 +50,7 @@ const myprojects = [
     git: "https://github.com/ousey-ousey",
   },
   {
-    id: 5,
+    id: 7,
     title: "calculator",
     category: "css",
     imgpath: "/calc.jpg",
@@ -42,7 +58,7 @@ const myprojects = [
     git: "https://github.com/ousey-ousey",
   },
   {
-    id: 6,
+    id: 8,
     title: "QR generator",
     category: "JS",
     imgpath: "/qr-code-gene.jpg",
@@ -50,7 +66,7 @@ const myprojects = [
     git: "https://github.com/ousey-ousey",
   },
   {
-    id: 7,
+    id: 9,
     title: "Random pass generator",
     category: "JS",
     imgpath: "/random-pass.jpg",
@@ -58,7 +74,7 @@ const myprojects = [
     git: "https://github.com/ousey-ousey",
   },
   {
-    id: 8,
+    id: 10,
     title: "Random color generator",
     category: "JS",
     imgpath: "/random-color.jpg",
@@ -66,7 +82,7 @@ const myprojects = [
     git: "https://github.com/ousey-ousey",
   },
   {
-    id: 9,
+    id: 11,
     title: " Most Acurate age calculator",
     category: "JS",
     imgpath: "/age-calc.jpg",
@@ -74,7 +90,7 @@ const myprojects = [
     git: "https://github.com/ousey-ousey",
   },
   {
-    id: 10,
+    id: 12,
     title: "Wheather App",
     category: "JS",
     imgpath: "/Wheather.jpg",
