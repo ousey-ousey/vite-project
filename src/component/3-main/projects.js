@@ -37,7 +37,7 @@ const myprojects = [
   {
     id: 5,
     title: " To do&Firebase& database",
-    category: ["React"],
+    category: ["React", "Firebase"],
     link: "https://react-firebase-pro-2-hmzc7uxvb-yousefs-projects-0a4c00cd.vercel.app/",
     imgpath: "/black.jpg",
     P: "this is   REACT Firebase databaseusing sign up and in data send and vertification of email, the hard wep everyone have an email and have his to do lists that is saved in database remove and add tasks check it now",
