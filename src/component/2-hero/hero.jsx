@@ -1,7 +1,8 @@
 import "./hero.css";
-import { motion } from "framer-motion";
+
 import devanimation from "../../animation/dev.json";
 import Lottie from "lottie-react";
+import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <div className="hero flex">
