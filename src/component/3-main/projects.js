@@ -47,6 +47,7 @@ const myprojects = [
     id: 6,
     title: "store & cart & page (node js and express)",
     category: "React",
+    link: "https://level5-redux-react-store.vercel.app/",
     imgpath: "/store.jpg",
     P: "this is a desine for complete functioning store",
     git: "https://github.com/ousey-ousey",
