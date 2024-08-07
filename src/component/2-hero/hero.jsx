@@ -12,7 +12,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            src="./2.png"
+            src="/2.png"
             alt="yousef~Aًٍََِْl~noumany"
             className="avatar"
           />
