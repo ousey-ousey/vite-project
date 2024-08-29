@@ -20,7 +20,7 @@ const myprojects = [
     id: 3,
     title: "Team web desine",
     category: ["React"],
-    link: "https://team-protifolio-vsdj.vercel.app/",
+    link: "https://siriuseg.vercel.app/",
     imgpath: "/sirios.jpg",
     P: "A desine for team of digital services ",
     git: "https://github.com/ousey-ousey",
