@@ -47,7 +47,14 @@ export default function Main() {
         >
           HTML & CSS
         </button>
-
+        <button
+          onClick={() => {
+            handleClick("tailwind");
+          }}
+          className={active === "tailwind" ? "active" : null}
+        >
+          Tailwind
+        </button>
         <button
           onClick={() => {
             handleClick("JS");
@@ -66,11 +73,11 @@ export default function Main() {
         </button>
         <button
           onClick={() => {
-            handleClick("Firebase");
+            handleClick("Next");
           }}
-          className={active === "Firebase" ? "active" : null}
+          className={active === "Next" ? "active" : null}
         >
-          Firebase
+          Next
         </button>
       </section>
       <section id="maincont" className="flex right-section">

@@ -12,7 +12,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            src="/2.png"
+            src="/2.jpg"
             alt="yousef~Aًٍََِْl~noumany"
             className="avatar"
           />
@@ -33,14 +33,18 @@ export default function Hero() {
           <p className="subtitle">
             As a front-end developer, I am eager to bring my passion for web
             development and fresh perspective to a dynamic team. With a solid
-            foundation in HTML, CSS, and JavaScript, I am capable of
-            transforming design mockups into responsive, user-friendly websites.
-            I have hands-on experience with modern libraries and frameworks such
-            as React and tailwind & i know how to use scss , and am enthusiastic
-            about learning new technologies. My attention to detail and
-            commitment to creating visually appealing and functional web
-            interfaces drive my work. I am excited to contribute to innovative
-            projects and grow my skills in a collaborative and supportive
+            foundation in HTML, CSS, and JavaScript, I excel at transforming
+            design mockups into responsive, user-friendly websites. My hands-on
+            experience with modern libraries and frameworks such as React,
+            Next.js, and Redux Toolkit allows me to create efficient and
+            interactive user interfaces. I am also proficient in using Tailwind
+            for responsive design and MUI (Material-UI) to enhance the visual
+            appeal of my projects. My knowledge of jQuery complements my skills,
+            enabling me to implement dynamic features seamlessly. I am committed
+            to crafting visually appealing and functional web interfaces, driven
+            by my attention to detail. I am enthusiastic about learning new
+            technologies and excited to contribute to innovative front-end
+            projects while growing my skills in a collaborative and supportive
             environment.
           </p>
         </div>
