@@ -8,14 +8,37 @@ export default function Hero() {
     <div className="hero flex">
       <div className="left-section ">
         <div className="parant-yousef flex ">
-          <motion.img
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            src="/2.jpg"
-            alt="yousef~Aًٍََِْl~noumany"
-            className="avatar"
-          />
+          <div style={{ position: "relative" }}>
+            <motion.img
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              src="/2.jpg"
+              alt="yousef~Aًٍََِْl~noumany"
+              className="avatar"
+            />
+
+            {/* <img
+              src="/sunglasses.png"
+              alt="sungls"
+              style={{
+                width: "6.125rem",
+                position: "absolute",
+                left: "1rem",
+                top: "-3rem",
+              }}
+            />
+            <img
+              src="/juice.png"
+              alt="sungls"
+              style={{
+                width: "6.125rem",
+                position: "absolute",
+                left: "1rem",
+                top: "-3rem",
+              }}
+            /> */}
+          </div>
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

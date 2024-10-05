@@ -69,6 +69,9 @@ main section.right-section article.card {
 .card .box .title {
   color: var(--title);
 }
+.card .box h2 {
+  color: var(--title);
+}
 .card .box .sub-title {
   color: var(--subtitle);
   font-size: 0.8rem;
@@ -126,11 +129,15 @@ main section.right-section article.card {
   border: none;
   border-radius: 5px;
   padding: 5px;
+  transition: 0.5s;
+  scale: 1;
   margin-left: 100px;
+  cursor: pointer;
 }
 #demobtn:hover {
-  box-shadow: inset;
-  box-shadow: 0px -1px 20px 7px #7e1b1bcc, 0px 0px 20px 6px #4731e0a3;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  scale: 1.4;
 }
 
 /*

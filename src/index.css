@@ -1,14 +1,18 @@
+/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 html {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Default Theme (Base) */
 :root {
   --primary: #000;
   --secondary: #19181a;
@@ -16,26 +20,87 @@ html {
   --title: rgb(244, 244, 245);
   --subtitle: rgb(161, 161, 170);
   --bg-header: rgb(47, 47, 51);
-  --imgglow:#fff9f9;
+  --imgglow: #fff9f9;
   --blue: rgba(31, 166, 228, 0.978);
-
 }
 
+/* Light Mode */
 .light {
   --primary: #fff;
   --secondary: #fff9f9;
-  --imgglow:rgba(31, 166, 228, 0.978);
+  --imgglow: rgba(31, 166, 228, 0.978);
   --border: rgba(115, 115, 124, 0.4);
   --title: rgb(1, 1, 19);
   --subtitle: rgb(21, 21, 28);
   --bg-header: rgb(165, 165, 165);
   --blue: rgba(0, 149, 246);
 }
+
+/* Combined Themes */
+
+/* Spring Theme */
+.spring {
+  --primary: #e1ffd7; /* Light Green */
+  --secondary: #b8f2e6; /* Light Cyan */
+  --border: #94d2bd; /* Soft Teal */
+  --title: #2d6a4f; /* Dark Green */
+  --subtitle: #000000; /* Darker Green */
+  --bg-header: #ffffff; /* Soft Teal for Header */
+  --imgglow: #d8f3dc; /* Pale Green */
+  --blue: #40916c; /* Sea Green */
+  --text: #1b1b1b; /* Almost Black for better readability */
+  --text-light: #f0f0f0; /* Light Text for overlays */
+}
+
+/* Summer Theme */
+.summer {
+  --primary: #fff9db; /* Light Yellow */
+  --secondary: #ffe66d; /* Bright Yellow */
+  --border: #f4d35e; /* Soft Yellow */
+  --title: #f77f00; /* Bright Orange */
+  --subtitle: #030000; /* Strong Red */
+  --bg-header: #ffffff; /* Bright Yellow for Header */
+  --imgglow: #fcbf49; /* Light Orange */
+  --blue: #f9844a; /* Coral */
+  --text: #3c3c3c; /* Darker Gray for contrast */
+  --text-light: #fff; /* White for overlays */
+}
+
+/* Autumn Theme */
+.autumn {
+  --primary: #fff3e0; /* Pale Orange */
+  --secondary: #ffcdb2; /* Soft Peach */
+  --border: #ffb4a2; /* Soft Red */
+  --title: #e76f51; /* Rich Coral */
+  --subtitle: #000000; /* Dark Red */
+  --bg-header: #ffffff; /* Warm Yellow for Header */
+  --imgglow: #ffb997; /* Soft Peach Glow */
+  --blue: #f25f5c; /* Coral */
+  --text: #1c1c1c; /* Very Dark Gray */
+  --text-light: #fff; /* White for overlays */
+}
+
+/* Winter Theme */
+.winter {
+  --primary: #f0f4f8; /* Very Light Gray */
+  --secondary: #d1d8e0; /* Soft Gray */
+  --border: #9db5b2; /* Teal Gray */
+  --title: #2c3e50; /* Dark Slate Gray */
+  --subtitle: #000000; /* Darker Slate Gray */
+  --bg-header: #ffffff; /* Soft Teal for Header */
+  --imgglow: #e0ece4; /* Light Gray */
+  --blue: #5d737e; /* Teal */
+  --text: #2c3e50; /* Darker Blue for better contrast */
+  --text-light: #ffffff; /* White for overlays */
+}
+
+/* Body Styling */
 body {
   background-color: var(--primary);
   color: whitesmoke;
 }
 
+/* Container Styling */
 .container {
   width: 80%;
   margin: 0 auto;
@@ -43,38 +108,39 @@ body {
   border: 1px solid var(--border);
   background-color: var(--secondary);
 }
+
+/* Divider Styling */
 .divider {
   border-bottom: 2px solid var(--border);
   margin: 3rem 0;
   margin-left: -2.3rem;
   width: calc(100% + 2.3rem + 2.3rem);
 }
+
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: initial;
 }
+
 .flex {
   display: flex;
   align-items: center;
 }
-.border {
-  border: red 2px solid;
-}
+
 button {
   all: unset;
   cursor: pointer;
 }
+
 button:active {
   transform: scale(0.9);
 }
-/*
-================
-scrol-bar
-=================
-*/
+
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 0.88rem;
 }
@@ -95,16 +161,13 @@ scrol-bar
   background: #2c0cde;
 }
 
-/* for Firefox */
+/* Firefox Scrollbar */
 html {
   scrollbar-width: 20px;
   scrollbar-color: #ecf407 #0000006c;
 }
 
-button:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
+/* Scroll-to-Top Button */
 .scroll2top {
   display: flex;
   justify-content: center;
@@ -126,31 +189,28 @@ button:disabled {
   opacity: 1;
   border: #000 1px solid;
 }
-#btna {
-  transition: 0.3s;
-}
-/*
-======================
-reponsive
-==================
-*/
+
+/* Responsive Design */
 @media (min-width: 1000px) {
   .container {
     width: 80%;
     padding: 0 2.3rem;
   }
 }
+
 @media (max-width: 1000px) {
   .container {
     width: 90%;
     padding: 0 2.3rem;
   }
 }
+
 @media (max-width: 500px) {
   .container {
     width: 98%;
     padding: 0 1.7rem;
   }
+
   .divider {
     border-bottom: 2px solid var(--border);
     margin: 3rem 0;

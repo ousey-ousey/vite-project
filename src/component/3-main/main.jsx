@@ -109,7 +109,7 @@ export default function Main() {
                   <p className="sub-title">{item.P}</p>
                   {item.link && (
                     <a id="demobtn" href={item.link} target="_blank">
-                      Demo
+                      Live Demo
                     </a>
                   )}
                   <div className="flex icons">
