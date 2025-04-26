@@ -1,34 +1,191 @@
-/*
-=========================
-hero left-section
-++++++++++++++++++++++++++
-*/
-
+/* ========================= hero left-section ++++++++++++++++++++++++++ */
 div.hero {
   margin-top: 30px;
 }
+
 .hero .left-section {
   flex-grow: 1;
 }
-.hero .left-section .avatar {
-  width: 150px;
-  border-radius: 50%;
+
+/* Atom structure styling */
+.atom-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
   margin-right: 1rem;
-  border: 1px #e66b6b9b solid;
+  margin-bottom: 2rem;
+  perspective: 1000px;
 }
+
+/* Nucleus (Avatar) styling */
+.nucleus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px #e66b6b9b solid;
+  object-fit: cover;
+}
+
+/* Invisible Orbit containers */
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  transform-style: preserve-3d;
+}
+
+.orbit-1 {
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  animation: rotate-1 10s linear infinite;
+}
+
+.orbit-2 {
+  width: 240px;
+  height: 240px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  animation: rotate-2 15s linear infinite reverse;
+}
+
+.orbit-3 {
+  width: 280px;
+  height: 280px;
+  transform: translate(-50%, -50%) rotate(75deg);
+  animation: rotate-3 20s linear infinite;
+}
+
+/* Electron (icon) styles */
+.electron {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(20, 20, 20, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px rgba(120, 120, 255, 0.5);
+}
+
+/* Position electrons */
+.electron-1 {
+  top: -20px;
+  left: calc(50% - 20px);
+}
+
+.electron-2 {
+  top: calc(50% - 20px);
+  right: -20px;
+}
+
+.electron-2-2 {
+  bottom: -20px;
+  left: calc(50% - 20px);
+}
+
+.electron-3 {
+  top: -20px;
+  left: calc(50% - 20px);
+}
+
+.electron-3-2 {
+  bottom: calc(50% - 20px);
+  right: -20px;
+}
+
+.electron-3-3 {
+  bottom: -20px;
+  left: calc(50% - 20px);
+}
+
+/* Tech icon styles */
+.tech-icon {
+  font-size: 24px;
+}
+
+.react-icon {
+  color: #61dafb;
+}
+
+.next-icon {
+  color: #fff;
+}
+
+.tailwind-icon {
+  color: #06b6d4;
+}
+
+.redux-icon {
+  color: #764abc;
+}
+
+.js-icon {
+  color: #f7df1e;
+}
+
+.sass-icon {
+  color: #cc6699;
+}
+
+/* Simple rotation animations */
+@keyframes rotate-1 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes rotate-2 {
+  from {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(405deg);
+  }
+}
+
+@keyframes rotate-3 {
+  from {
+    transform: translate(-50%, -50%) rotate(75deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(435deg);
+  }
+}
+
+/* Rest of the original CSS */
 .hero .left-section .verified {
   color: var(--blue);
   position: sticky;
   font-size: 1.5rem;
-  margin-left: 7rem;
+  margin-left: 11rem;
   margin-bottom: 2rem;
   margin-top: -1.5rem;
 }
+
 .hero .left-section .parant-yousef {
   align-items: start;
   min-height: 150px;
   flex-direction: column;
 }
+
 .hero .left-section h1 {
   color: var(--title);
   line-height: 2rem;
@@ -43,14 +200,12 @@ div.hero {
   line-height: 1.65rem;
   margin-bottom: 32px;
 }
-/*
-====================
-    icons
-====================
-    */
+
+/* ====================     icons ====================     */
 .hero .left-section .icons {
   gap: 1.7rem;
 }
+
 .hero .left-section .icons .icon {
   font-size: 2.2rem;
   margin: 10px;
@@ -59,25 +214,98 @@ div.hero {
   width: 20px;
   height: 20px;
 }
+
 .hero .left-section .icons .icon:hover {
   color: var(--title);
 }
-/*
-=========================
-right-section animation 
-++
-=========================
-*/
 
+/* ========================= right-section animation  ========================= */
 .animation {
   width: 100%;
   width: 200rem;
 }
-/*================
-media
-==================*/
+
+/* Media Queries */
 @media screen and (max-width: 768px) {
   .animation {
     display: none;
+  }
+
+  .atom-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .nucleus {
+    width: 120px;
+    height: 120px;
+  }
+
+  .orbit-1 {
+    width: 170px;
+    height: 170px;
+  }
+
+  .orbit-2 {
+    width: 210px;
+    height: 210px;
+  }
+
+  .orbit-3 {
+    width: 250px;
+    height: 250px;
+  }
+
+  .electron {
+    width: 35px;
+    height: 35px;
+  }
+
+  .tech-icon {
+    font-size: 20px;
+  }
+
+  .hero .left-section .verified {
+    margin-left: 9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .atom-container {
+    width: 220px;
+    height: 220px;
+  }
+
+  .nucleus {
+    width: 100px;
+    height: 100px;
+  }
+
+  .orbit-1 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .orbit-2 {
+    width: 190px;
+    height: 190px;
+  }
+
+  .orbit-3 {
+    width: 220px;
+    height: 220px;
+  }
+
+  .electron {
+    width: 30px;
+    height: 30px;
+  }
+
+  .tech-icon {
+    font-size: 16px;
+  }
+
+  .hero .left-section .verified {
+    margin-left: 7rem;
   }
 }

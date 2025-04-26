@@ -47,97 +47,168 @@ main section.left-section button.active {
 right-section
 ====================
 */
+/* Main container styling */
 main section.right-section {
   flex-grow: 1;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
+  padding: 1rem;
 }
+
+/* Card article styling */
 main section.right-section article.card {
-  padding: 5px;
-  width: 270px;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
 }
+
+/* Card container */
+.card div#BOX {
+  width: 280px;
+  border: 1px solid rgba(68, 85, 102, 0.39);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 380px; /* Fixed height for consistency */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Image container */
+.card div#BOX > div:first-child {
+  width: 100% !important;
+  height: 180px !important; /* Fixed height for images */
+  overflow: hidden;
+}
+
+/* Ensure images display properly */
+.card div#BOX > div:first-child {
+  background-size: cover !important;
+  background-position: center !important;
+  transition: transform 0.5s ease;
+}
+
+/* Image hover effect */
+.card div#BOX:hover > div:first-child {
+  transform: scale(1.05);
+}
+
+/* Content box */
 .card .box {
-  padding: 1rem 0.4rem;
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100% !important;
+  height: 200px; /* Fixed content height */
 }
-.light .card .box {
-  padding: 1rem 0.4rem;
-  color: var(--title);
-  background-color: bisque;
-}
-.card .box .title {
-  color: var(--title);
-}
+
+/* Card title */
 .card .box h2 {
   color: var(--title);
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
 }
+
+/* Card subtitle/description */
 .card .box .sub-title {
   color: var(--subtitle);
-  font-size: 0.8rem;
-  margin-top: 0.7rem;
-  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 0.5rem 0 1rem;
+  flex-grow: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
+
+/* Card footer with icons and links */
 .card .box .icons {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(68, 85, 102, 0.15);
 }
+
+/* Icon container */
+.card .box .icons .flex {
+  display: flex;
+  align-items: center;
+}
+
+/* Icon styling */
 .card .icon-github,
 .icons .icon-link {
   font-size: 1.2rem;
   color: var(--subtitle);
+  transition: all 0.2s ease;
 }
+
+/* Icon hover effect */
 .card .icon-github:hover,
 .icons .icon-link:hover {
   cursor: pointer;
-  font-size: 1.25rem;
   color: var(--title);
-}
-.card div#BOX {
-  border: 1px solid rgba(68, 85, 102, 0.39);
-  transition: 0.3s;
-  width: 271px;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-.card img {
-  border-radius: 5px;
-  width: 269px;
+  transform: scale(1.1);
 }
 
-.card div#BOX:hover {
-  border: 1px solid var(--blue);
-  scale: 1.01;
-  cursor: pointer;
-  rotate: 1deg;
-}
-#linko {
-  color: var(--blue);
-  font-size: 1rem;
-  gap: 4px;
-}
-
-.light main section.right-section article.card {
-  border: none;
-  border-radius: 10px;
-}
-.light main section.right-section article.card:hover {
-  border: none;
-}
+/* Demo button */
 #demobtn {
   background-color: var(--blue);
   color: var(--white);
   border: none;
-  border-radius: 5px;
-  padding: 5px;
-  transition: 0.5s;
-  scale: 1;
-  margin-left: 100px;
-  cursor: pointer;
+  border-radius: 6px;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 0.75rem 0;
+  text-align: center;
+  text-decoration: none;
 }
+
+/* Demo button hover effect */
 #demobtn:hover {
-  background-color: rgb(255, 255, 255);
-  color: #000;
-  scale: 1.4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* More link styling */
+#linko {
+  color: var(--blue);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* More link hover effect */
+#linko:hover {
+  transform: translateX(3px);
+}
+
+/* Light theme adjustments */
+.light .card .box {
+  background-color: #f9f5f0;
+  color: var(--title);
+}
+
+/* Card hover effect */
+.card div#BOX:hover {
+  border-color: var(--blue);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 /*

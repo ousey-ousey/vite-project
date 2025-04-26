@@ -55,14 +55,14 @@ export default function Main() {
         >
           Tailwind
         </button>
-        <button
+        {/* <button
           onClick={() => {
             handleClick("JS");
           }}
           className={active === "JS" ? "active" : null}
         >
           Javascript
-        </button>
+        </button> */}
         <button
           onClick={() => {
             handleClick("React");
@@ -84,12 +84,11 @@ export default function Main() {
         {arr.map((item) => {
           return (
             <motion.article
-              initial={{ scale: 0 }}
-              animate={{ rotate: 360, scale: 1 }}
+              initial={{ scale: 0, rotate: 0 }}
+              animate={{ scale: 1, rotate: 360 }}
               transition={{
-                type: "spring",
-                stiffness: 260,
-                damping: 20,
+                duration: 0.4, // Fast animation, completes in 0.4 seconds
+                ease: "easeOut", // Smooth ease-out timing function
               }}
               key={item.id}
               className="card"
@@ -101,7 +100,7 @@ export default function Main() {
                     height: "200px", // Ensure the div has height for the background image
                     backgroundImage: `url(${item.imgpath})`,
                     backgroundSize: "cover", // Ensure the image covers the div
-                    backgroundPosition: "center", // Center the image
+                    backgroundPosition: "top", // Center the image
                   }}
                 />
                 <div className="box" style={{ width: 270 }}>

@@ -173,35 +173,49 @@ header .fixed ul.model li:first-child {
 }
 .seasons-container {
   display: flex;
-  gap: 5px;
+  gap: 10px;
+  align-items: flex-start; /* Align items to the top */
+  margin-bottom: 15px;
 }
 
 .season-img {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  border: 1px solid yellow;
+  border: 2px solid gray;
   cursor: pointer;
-  transition: transform 0.2s, border-color 0.2s;
+  transition: all 0.2s ease;
+  object-fit: cover; /* Ensure images maintain aspect ratio */
+  object-position: top; /* Position image at the top */
+  padding: 2px; /* Add some padding inside the border */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Slight background for better visibility */
 }
 
 .season-img:hover {
-  transform: scale(1.1);
-  border-color: gold;
+  transform: scale(1.15);
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
 }
 
 .season-img.active {
-  border-color: orange;
+  border-color: black;
+  border-width: 3px;
+  transform: scale(1.1);
 }
 
 .light .season-img {
   border-color: blue;
+  background-color: rgba(200, 220, 255, 0.2);
 }
 
 .light .season-img.active {
   border-color: cyan;
+  box-shadow: 0 0 8px rgba(0, 180, 255, 0.6);
 }
-
 /*
 =========================
 header 

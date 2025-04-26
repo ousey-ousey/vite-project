@@ -39,27 +39,7 @@ export default function Header() {
 
   return (
     <header className="flex">
-      <button className="menu icon-menu" onClick={() => setshowmodel(true)} />
-      <nav>
-        <ul className="flex">
-          <li>
-            <a href="">About</a>
-          </li>
-          <li>
-            <a href="">Articles</a>
-          </li>
-          <li>
-            <a href="">Projects</a>
-          </li>
-          <li>
-            <a href="">Speaking</a>
-          </li>
-          <li>
-            <a href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-
+      {/* <button className="menu icon-menu" onClick={() => setshowmodel(true)} /> */}
       <button
         className={`theme-toggle ${
           theme === "dark" ? "icon-moon-o" : "icon-sun"
