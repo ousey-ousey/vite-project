@@ -2,7 +2,7 @@ const myprojects = [
   {
     id: 1,
     title: " React Portfolio",
-    category: "React",
+    category: ["React"],
     imgpath: "/react-1.jpg",
     P: "this is   REACT portfolio that u watch thought it it took me 12h to 14h along 3days!",
     git: "https://github.com/ousey-ousey",

@@ -84,10 +84,10 @@ export default function Main() {
         {arr.map((item) => {
           return (
             <motion.article
-              initial={{ scale: 0, rotate: 0 }}
-              animate={{ scale: 1, rotate: 360 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{
-                duration: 0.4, // Fast animation, completes in 0.4 seconds
+                duration: 1, // Fast animation, completes in 0.4 seconds
                 ease: "easeOut", // Smooth ease-out timing function
               }}
               key={item.id}
@@ -103,23 +103,56 @@ export default function Main() {
                     backgroundPosition: "top", // Center the image
                   }}
                 />
-                <div className="box" style={{ width: 270 }}>
-                  <h2>{item.title}</h2>
-                  <p className="sub-title">{item.P}</p>
-                  {item.link && (
-                    <a id="demobtn" href={item.link} target="_blank">
-                      Live Demo
-                    </a>
-                  )}
-                  <div className="flex icons">
-                    <div style={{ gap: "11px" }} className="flex">
-                      <span className="icon-link"></span>
-                      <span className="icon-github"></span>
+                <div style={{ width: 270, position: "relative" }}>
+                  <div
+                    style={{
+                      position: "absolute",
+                      background: "green",
+                      textAlign: "center",
+                      borderRadius: "15px 0 15px  0 ",
+                      padding: "2px",
+                      top: "1.75rem",
+                      fontSize: "small",
+                      left: 8,
+                      width: 60,
+                      height: 20,
+                    }}
+                  >
+                    {item.category?.[0]}
+                  </div>
+                  <div
+                    className="box textcontent"
+                    style={{
+                      width: "100%",
+                      clipPath:
+                        "path('M 20 20 L 60 20 A 20 20 0 0 0  70 10  A 20 20 0 0 1  80 0 L 270 0 L 270 270 L 0 270 L 0 40 A 20 20 0 0 1 20 20 Z')",
+                    }}
+                  >
+                    <h2
+                      style={{
+                        fontSize: "medium",
+                        marginTop: ".5rem",
+                      }}
+                    >
+                      {item.title}
+                    </h2>
+                    <p className="sub-title">{item.P}</p>
+
+                    <div className="flex icons">
+                      <div style={{ gap: "11px" }} className="flex">
+                        <span className="icon-link"></span>
+                        <span className="icon-github"></span>
+                      </div>
+                      {item.link && (
+                        <a id="demobtn" href={item.link} target="_blank">
+                          Live Demo
+                        </a>
+                      )}
+                      <a href={item.git} id="linko" className="flex">
+                        more
+                        <span className="icon-arrow-right"></span>
+                      </a>
                     </div>
-                    <a href={item.git} id="linko" className="flex">
-                      more
-                      <span className="icon-arrow-right"></span>
-                    </a>
                   </div>
                 </div>
               </div>

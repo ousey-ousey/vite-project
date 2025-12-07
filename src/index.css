@@ -14,9 +14,8 @@ html {
 
 /* Default Theme (Base) */
 :root {
-  --primary: #000;
-  --secondary: #19181a;
-  --border: rgba(63, 63, 70, 0.4);
+  --primary: linear-gradient(236deg, #092635, #030303) !important;
+  --border: #697565;
   --title: rgb(244, 244, 245);
   --subtitle: rgb(161, 161, 170);
   --bg-header: rgb(47, 47, 51);
@@ -26,8 +25,7 @@ html {
 
 /* Light Mode */
 .light {
-  --primary: #fff;
-  --secondary: #fff9f9;
+  --primary: linear-gradient(236deg, #87ceeb, #f0f8ff);
   --imgglow: rgba(31, 166, 228, 0.978);
   --border: rgba(115, 115, 124, 0.4);
   --title: rgb(1, 1, 19);
@@ -40,11 +38,10 @@ html {
 
 /* Spring Theme */
 .spring {
-  --primary: #e1ffd7; /* Light Green */
-  --secondary: #b8f2e6; /* Light Cyan */
+  --primary: linear-gradient(236deg, #a8e6cf, #ffdde1); /* Light Green */
   --border: #94d2bd; /* Soft Teal */
   --title: #2d6a4f; /* Dark Green */
-  --subtitle: #000000; /* Darker Green */
+  --subtitle: #1d8112; /* Darker Green */
   --bg-header: #ffffff; /* Soft Teal for Header */
   --imgglow: #d8f3dc; /* Pale Green */
   --blue: #40916c; /* Sea Green */
@@ -54,11 +51,10 @@ html {
 
 /* Summer Theme */
 .summer {
-  --primary: #fff9db; /* Light Yellow */
-  --secondary: #ffe66d; /* Bright Yellow */
+  --primary: linear-gradient(236deg, #00c9ff, #92fe9d); /* Light Yellow */
   --border: #f4d35e; /* Soft Yellow */
   --title: #f77f00; /* Bright Orange */
-  --subtitle: #030000; /* Strong Red */
+  --subtitle: #92fe9d
   --bg-header: #ffffff; /* Bright Yellow for Header */
   --imgglow: #fcbf49; /* Light Orange */
   --blue: #f9844a; /* Coral */
@@ -68,11 +64,10 @@ html {
 
 /* Autumn Theme */
 .autumn {
-  --primary: #fff3e0; /* Pale Orange */
-  --secondary: #ffcdb2; /* Soft Peach */
+  --primary: linear-gradient(236deg, #c94b4b, #ffb946); /* Pale Orange */
   --border: #ffb4a2; /* Soft Red */
-  --title: #e76f51; /* Rich Coral */
-  --subtitle: #000000; /* Dark Red */
+  --title: #FFF    ;
+  --subtitle: #ffffff; /* Dark Red */
   --bg-header: #ffffff; /* Warm Yellow for Header */
   --imgglow: #ffb997; /* Soft Peach Glow */
   --blue: #f25f5c; /* Coral */
@@ -82,11 +77,10 @@ html {
 
 /* Winter Theme */
 .winter {
-  --primary: #f0f4f8; /* Very Light Gray */
-  --secondary: #d1d8e0; /* Soft Gray */
+  --primary: linear-gradient(236deg, #e0ffff, #87cefa); /* Very Light Gray */
   --border: #9db5b2; /* Teal Gray */
-  --title: #2c3e50; /* Dark Slate Gray */
-  --subtitle: #000000; /* Darker Slate Gray */
+  --title: #00be9bd9; /* Dark Slate Gray */
+  --subtitle: #00d0ff; /* Darker Slate Gray */
   --bg-header: #ffffff; /* Soft Teal for Header */
   --imgglow: #e0ece4; /* Light Gray */
   --blue: #5d737e; /* Teal */
@@ -96,7 +90,7 @@ html {
 
 /* Body Styling */
 body {
-  background-color: var(--primary);
+  background: var(--primary);
   color: whitesmoke;
 }
 
@@ -105,13 +99,10 @@ body {
   width: 80%;
   margin: 0 auto;
   padding: 0 2rem;
-  border: 1px solid var(--border);
-  background-color: var(--secondary);
 }
 
 /* Divider Styling */
 .divider {
-  border-bottom: 2px solid var(--border);
   margin: 3rem 0;
   margin-left: -2.3rem;
   width: calc(100% + 2.3rem + 2.3rem);

@@ -38,69 +38,71 @@ export default function Header() {
   };
 
   return (
-    <header className="flex">
-      {/* <button className="menu icon-menu" onClick={() => setshowmodel(true)} /> */}
-      <button
-        className={`theme-toggle ${
-          theme === "dark" ? "icon-moon-o" : "icon-sun"
-        }`}
-        onClick={handleThemeChange}
-      />
+    <>
+      <header className="flex">
+        {/* <button className="menu icon-menu" onClick={() => setshowmodel(true)} /> */}
+        <button
+          className={`theme-toggle ${
+            theme === "dark" ? "icon-moon-o" : "icon-sun"
+          }`}
+          onClick={handleThemeChange}
+        />
 
-      <div className="seasons-container">
-        <img
-          className={`season-img ${theme === "summer" ? "active" : ""}`}
-          src="/summer.png"
-          alt="summer"
-          onClick={() => handleSeasonChange("summer")}
-        />
-        <img
-          className={`season-img ${theme === "autumn" ? "active" : ""}`}
-          src="/autumn.png"
-          alt="autumn"
-          onClick={() => handleSeasonChange("autumn")}
-        />
-        <img
-          className={`season-img ${theme === "winter" ? "active" : ""}`}
-          src="/snowman.png"
-          alt="winter"
-          onClick={() => handleSeasonChange("winter")}
-        />
-        <img
-          className={`season-img ${theme === "spring" ? "active" : ""}`}
-          src="/spring.png"
-          alt="spring"
-          onClick={() => handleSeasonChange("spring")}
-        />
-      </div>
-
-      {showmodel && (
-        <div className="fixed">
-          <ul className="model">
-            <li>
-              <button
-                className="icon-close"
-                onClick={() => setshowmodel(false)}
-              />
-            </li>
-            <li>
-              <a href="">About</a>
-            </li>
-            <li>
-              <a href="">Articles</a>
-            </li>
-            <li>
-              <a href="">Projects</a>
-            </li>
-            <li>
-              <a href="">Speaking</a>
-            </li>
-            <li>
-              <a href="">Contacts</a>
-            </li>
-          </ul>
+        <div className="seasons-container">
+          <img
+            className={`season-img ${theme === "summer" ? "active" : ""}`}
+            src="/summer.png"
+            alt="summer"
+            onClick={() => handleSeasonChange("summer")}
+          />
+          <img
+            className={`season-img ${theme === "autumn" ? "active" : ""}`}
+            src="/autumn.png"
+            alt="autumn"
+            onClick={() => handleSeasonChange("autumn")}
+          />
+          <img
+            className={`season-img ${theme === "winter" ? "active" : ""}`}
+            src="/snowman.png"
+            alt="winter"
+            onClick={() => handleSeasonChange("winter")}
+          />
+          <img
+            className={`season-img ${theme === "spring" ? "active" : ""}`}
+            src="/spring.png"
+            alt="spring"
+            onClick={() => handleSeasonChange("spring")}
+          />
         </div>
-      )}
-    </header>
+
+        {showmodel && (
+          <div className="fixed">
+            <ul className="model">
+              <li>
+                <button
+                  className="icon-close"
+                  onClick={() => setshowmodel(false)}
+                />
+              </li>
+              <li>
+                <a href="">About</a>
+              </li>
+              <li>
+                <a href="">Articles</a>
+              </li>
+              <li>
+                <a href="">Projects</a>
+              </li>
+              <li>
+                <a href="">Speaking</a>
+              </li>
+              <li>
+                <a href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        )}
+      </header>
+    </>
   );
 }
