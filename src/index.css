@@ -51,10 +51,10 @@ html {
 
 /* Summer Theme */
 .summer {
-  --primary: linear-gradient(236deg, #00c9ff, #92fe9d); /* Light Yellow */
+  --primary: linear-gradient(236deg, #0066ff, #fff000); /* Light Yellow */
   --border: #f4d35e; /* Soft Yellow */
-  --title: #f77f00; /* Bright Orange */
-  --subtitle: #92fe9d
+  --title: #fff; /* Bright Orange */
+  --subtitle: #fff;
   --bg-header: #ffffff; /* Bright Yellow for Header */
   --imgglow: #fcbf49; /* Light Orange */
   --blue: #f9844a; /* Coral */
@@ -66,7 +66,7 @@ html {
 .autumn {
   --primary: linear-gradient(236deg, #c94b4b, #ffb946); /* Pale Orange */
   --border: #ffb4a2; /* Soft Red */
-  --title: #FFF    ;
+  --title: #fff;
   --subtitle: #ffffff; /* Dark Red */
   --bg-header: #ffffff; /* Warm Yellow for Header */
   --imgglow: #ffb997; /* Soft Peach Glow */

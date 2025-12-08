@@ -37,39 +37,7 @@ export default function Main() {
           }}
           className={active === "all" ? "active" : null}
         >
-          All Projects
-        </button>
-        <button
-          onClick={() => {
-            handleClick("css");
-          }}
-          className={active === "css" ? "active" : null}
-        >
-          HTML & CSS
-        </button>
-        <button
-          onClick={() => {
-            handleClick("tailwind");
-          }}
-          className={active === "tailwind" ? "active" : null}
-        >
-          Tailwind
-        </button>
-        {/* <button
-          onClick={() => {
-            handleClick("JS");
-          }}
-          className={active === "JS" ? "active" : null}
-        >
-          Javascript
-        </button> */}
-        <button
-          onClick={() => {
-            handleClick("React");
-          }}
-          className={active === "React" ? "active" : null}
-        >
-          React & MUI
+          <span className="button_top">All Projects </span>
         </button>
         <button
           onClick={() => {
@@ -77,7 +45,32 @@ export default function Main() {
           }}
           className={active === "Next" ? "active" : null}
         >
-          Next
+          <span className="button_top">Next </span>
+        </button>
+
+        <button
+          onClick={() => {
+            handleClick("css");
+          }}
+          className={active === "css" ? "active" : null}
+        >
+          <span className="button_top"> HTML & CSS </span>
+        </button>
+        <button
+          onClick={() => {
+            handleClick("tailwind");
+          }}
+          className={active === "tailwind" ? "active" : null}
+        >
+          <span className="button_top"> Tailwind </span>
+        </button>
+        <button
+          onClick={() => {
+            handleClick("React");
+          }}
+          className={active === "React" ? "active" : null}
+        >
+          <span className="button_top"> React & MUI </span>
         </button>
       </section>
       <section id="maincont" className="flex right-section">

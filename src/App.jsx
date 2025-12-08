@@ -4,6 +4,8 @@ import Main from "./component/3-main/main";
 import Contant from "./component/4-conn/conn";
 import Footer from "./component/5-footer/footer";
 import { useEffect } from "react";
+import Pattern from "./component/Pattern";
+import Gallaries from "./component/4.5-gallary/Gllary";
 function App() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -18,13 +20,17 @@ function App() {
 
   return (
     <div className="container" id="up">
+      {/* <Pattern /> */}
       <Header />
       <Hero />
       <div className="divider" />
       <Main />
       <div className="divider" />
+      <Gallaries />
+      <div className="divider" />
       <Contant />
       <div className="divider" />
+
       <Footer />
       <a id="btna" style={{ opacity: 0 }} href="#up">
         <button className="scroll2top icon-keyboard_arrow_up"></button>
